@@ -1,8 +1,10 @@
 .header__wrapper {
   display: flex;
   flex-direction: row;
+  max-width: 1366px;
   margin: auto 0;
   padding: 0 103px;
+  padding-top: 30px;
 }
 
 .header__wrapper a {
