@@ -25,6 +25,15 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Bebas Neue";
+
+  src: url("../fonts/BebasNeueCyrilic.woff") format("woff"),
+    url("../fonts/BebasNeueCyrilic.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
 html {
   box-sizing: border-box;
 }
