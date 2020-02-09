@@ -83,7 +83,7 @@
 }
 
 .promo__button-link {
-  color: #fff;
+  color: #ffffff;
   width: 234px;
   height: 60px;
   padding: 0 15px;
@@ -157,7 +157,7 @@
   .promo__wrapper {
     justify-content: center;
     padding: 0 15px;
-    padding-bottom: 86px;
+    padding-bottom: 80px;
   }
 
   .promo__text-block {
@@ -175,19 +175,18 @@
     line-height: 78px;
   }
 
-    .promo__image {
-      display: none;
-    }
+  .promo__image {
+    display: none;
+  }
 
-    .promo__list.features {
-      bottom: 70px;
-      left: -177px;
-    }
+  .promo__list.features {
+    bottom: 70px;
+    left: -177px;
+  }
 
-    .promo__button-link {
-      margin-top: -16px;
-      width: 293px;
-      margin-left: 7px;
-      width: 292px;
-    }
+  .promo__button-link {
+    margin-top: -16px;
+    width: 292px;
+    margin-left: 7px;
+  }
 }
