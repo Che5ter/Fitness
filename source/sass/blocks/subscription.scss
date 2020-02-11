@@ -153,6 +153,10 @@
 }
 
 @media (max-width: $tablet-width) {
+  .subscription {
+    margin-top: 145px;
+  }
+
   .subscription__list {
     flex-direction: column;
   }
@@ -160,5 +164,10 @@
   .subscription__list li {
     width: 442px;
     margin-bottom: 40px;
+  }
+
+  .subscription__wrapper h2 {
+    font-size: 42px;
+    line-height: 42px;
   }
 }
