@@ -46,13 +46,17 @@
 
 .subscription__choice label {
   position: relative;
+  font-family: $roboto-condensed;
+  font-size: 18px;
+  line-height: 27px;
+  color: rgba(16, 38, 84, 0.5);
 
   &::after {
     content: "";
     position: absolute;
     width: 100%;
     height: 2px;
-    top: 38px;
+    top: 47px;
     left: 0;
     background-color: none;
   }
@@ -82,7 +86,7 @@
 }
 
 .subscription__list li:hover {
-  background: url("../img/subscription-border.svg") no-repeat;
+  background: url("../img/subscription-border-desktop.svg") no-repeat;
 }
 
 .subscription__list li:last-child {
@@ -154,7 +158,8 @@
 
 @media (max-width: $tablet-width) {
   .subscription {
-    margin-top: 145px;
+    margin-top: 87px;
+    padding-bottom: 64px;
   }
 
   .subscription__list {
@@ -163,11 +168,107 @@
 
   .subscription__list li {
     width: 442px;
-    margin-bottom: 40px;
+    margin-left: 37px;
+    margin-top: 5px;
+    margin-bottom: 34px;
   }
 
   .subscription__wrapper h2 {
+    margin-top: 90px;
+    margin-bottom: 35px;
     font-size: 42px;
     line-height: 42px;
+  }
+
+  .subscription__choice {
+    padding-bottom: 11px;
+    width: 332px;
+  }
+
+  .subscription__list li:hover {
+    background: url("../img/subscription-border-tablet.svg") no-repeat;
+  }
+
+  .subscription__choice label::after {
+    top: 38px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .subscription {
+    margin-top: 70px;
+  }
+
+  .subscription__wrapper {
+    padding: 0 15px;
+  }
+
+  .subscription__wrapper h2 {
+    margin-top: 67px;
+    margin-bottom: 25px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .subscription__choice {
+    width: 290px;
+  }
+
+  .subscription__choice label {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .subscription__choice label::after {
+    top: 35px;
+  }
+
+  .subscription__list {
+    align-items: center;
+    margin: 0;
+  }
+
+  .subscription__list li {
+    width: 290px;
+    margin-left: 0;
+    margin-top: 33px;
+    margin-bottom: 1px;
+    margin-right: 0;
+  }
+
+  .subscription__price span:first-of-type {
+    font-size: 48px;
+    line-height: 72px;
+    margin-right: 7px;
+  }
+
+  .subscription__background-price {
+    top: 118px;
+    font-size: 80px;
+    line-height: 120px;
+  }
+
+  .subscription__list h3 {
+    padding-top: 30px;
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .subscription__link {
+    margin-top: 30px;
+    margin-bottom: 54px;
+  }
+
+  .subscription__price {
+    margin-top: 54px;
+  }
+
+  .subscription__price svg {
+    width: 24px;
+    height: 33px;
+  }
+
+  .subscription__list li:hover {
+    background: url("../img/subscription-border-mobile.svg") no-repeat;
   }
 }
