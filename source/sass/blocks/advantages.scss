@@ -1,0 +1,134 @@
+.advantages__wrapper {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 163px;
+}
+
+.advantages__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.advantages__block > div {
+  width: 340px;
+}
+
+.advantages__text {
+  position: relative;
+}
+
+.advantages__text h3 {
+  font-family: $roboto-condensed;
+  font-size: 22px;
+  line-height: 33px;
+  color: #102654;
+}
+
+.advantages__text p {
+  font-family: $roboto-condensed;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #102654;
+}
+
+.advantages__text.area,
+.advantages__text.comfort {
+  padding-left: 120px;
+}
+
+.advantages__text.parking,
+.advantages__text.experience {
+  padding-left: 80px;
+}
+
+.advantages__text.area::before {
+  content: "";
+  position: absolute;
+  width: 108px;
+  height: 80px;
+  background: url("../img/advantages-area-desk.svg");
+  top: 0;
+  left: -16px;
+}
+
+.advantages__text.comfort::before {
+  content: "";
+  position: absolute;
+  width: 108px;
+  height: 80px;
+  background: url("../img/advantages-comfort-desk.svg") no-repeat;
+  top: 0;
+  left: -16px;
+}
+
+.advantages__text.parking::before {
+  content: "";
+  position: absolute;
+  width: 108px;
+  height: 80px;
+  background: url("../img/advantages-parking-desk.svg") no-repeat;
+  top: 0;
+  left: -16px;
+}
+
+.advantages__text.experience::before {
+  content: "";
+  position: absolute;
+  width: 108px;
+  height: 80px;
+  background: url("../img/advantages-experience-desk.svg") no-repeat;
+  top: 0;
+  left: -16px;
+}
+
+.advantages__main-advantage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 25px;
+  width: 240px;
+  height: 307px;
+  margin: 0 auto;
+  background-color: #1c3374;
+  font-family: $roboto-condensed;
+  text-align: center;
+  order: 2;
+  color: #ffffff;
+}
+
+.advantages__main-advantage span:first-of-type {
+  font-weight: bold;
+  font-size: 74px;
+  line-height: 111px;
+}
+
+.advantages__main-advantage span:nth-of-type(2) {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 39px;
+}
+
+.advantages__wrapper .advantages__block:first-of-type {
+  order: 1;
+}
+
+.advantages__wrapper .advantages__block:nth-of-type(2) {
+  order: 3;
+  margin-left: auto;
+}
+
+@media (max-width: $tablet-width) {
+  .advantages__wrapper {
+    padding: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .advantages__wrapper {
+    flex-direction: column;
+  }
+}

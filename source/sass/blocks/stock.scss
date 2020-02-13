@@ -1,0 +1,248 @@
+.stock {
+  margin-top: 349px;
+}
+
+.stock__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1366px;
+  padding: 0 103px;
+  margin: 0 auto;
+}
+
+.stock__wrapper h2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 54px;
+  font-family: $BebasNeue;
+  color: #102654;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  font-weight: normal;
+}
+
+.stock__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.stock__promo {
+  display: flex;
+  width: 48.2%;
+  font-family: $roboto-condensed;
+  color: #ffffff;
+  background-color: #ed0233;
+}
+
+.stock__promo-description {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  padding: 0 45px;
+}
+
+.stock__promo-description a {
+  margin-top: auto;
+  margin-bottom: 46px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.stock__promo-description p {
+  padding-top: 7px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.stock__promo-photo {
+  width: 50%;
+  height: 462px;
+}
+
+.stock__options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 48.2%;
+  font-family: $roboto-condensed;
+  color: #1c3374;
+}
+
+.stock__options h3 {
+  margin: 0;
+  margin-top: 22px;
+  font-size: 26px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.stock__options p {
+  margin: 0;
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.stock__promo-description span:first-of-type {
+  padding-top: 34px;
+  font-size: 28px;
+  line-height: 44px;
+  font-weight: bold;
+}
+
+.stock__promo-description span:nth-of-type(2) {
+  font-size: 70px;
+  line-height: 58px;
+  font-weight: bold;
+}
+
+.stock__options-1,
+.stock__options-2, {
+  display: flex;
+  flex-direction: column;
+  padding: 0 26px;
+  min-height: 211px;
+  border: 7px solid;
+  border-image: url("../img/stock-border.png") 7;
+}
+
+.stock__options a {
+  margin-top: auto;
+  margin-bottom: 30px;
+  margin-left: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 14px;
+  color: #1c3374;
+  font-weight: bold;
+}
+
+.stock__promo-photo img {
+  height: 100%;
+}
+
+@media (max-width: $tablet-width) {
+  .stock {
+    margin-top: 274px;
+  }
+
+  .stock__wrapper {
+    padding: 0 45px;
+  }
+
+  .stock__content {
+    flex-direction: column;
+  }
+
+  .stock__options {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 31px;
+  }
+
+  .stock__promo {
+    width: 100%;
+  }
+
+  .stock__promo-photo {
+    width: 59%;
+  }
+
+  .stock__promo-description {
+    width: 41.4%;
+  }
+
+  .stock__promo-photo img {
+    width: 100%;
+  }
+
+  .stock__options-1,
+  .stock__options-2 {
+    width: 47.8%;
+  }
+
+  .stock__wrapper h2 {
+    margin-bottom: 44px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .stock__promo-description p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .stock__options-1 {
+    padding-right: 64px;
+  }
+}
+
+  @media (max-width: $mobile-width) {
+    .stock {
+      margin-top: 487px;
+    }
+
+    .stock__wrapper {
+      padding: 0 15px;
+    }
+
+    .stock__promo {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .stock__options {
+      flex-direction: column;
+    }
+
+    .stock__promo-photo {
+      width: 100%;
+      height: 299px;
+    }
+
+    .stock__promo-description {
+      width: 100%;
+      text-align: center;
+    }
+
+    .stock__options-1,
+    .stock__options-2 {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .stock__wrapper h2 {
+      font-size: 32px;
+      line-height: 32px;
+    }
+
+    .stock__promo-description p {
+      padding-top: 3px;
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+    .stock__promo-description a {
+      margin-top: 13px;
+    }
+
+    .stock__options-1,
+    .stock__options-2 {
+      text-align: center;
+      padding-top: 11px;
+    }
+
+    .stock__options-1 {
+      padding-right: 27px;
+    }
+
+    .stock__options a {
+      margin-bottom: 42px;
+    }
+}
